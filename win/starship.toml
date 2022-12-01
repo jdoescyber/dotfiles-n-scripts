@@ -1,0 +1,52 @@
+
+# FONT: 'GoMono Nerd Font Mono'
+# https://www.nerdfonts.com/font-downloads
+
+# Add a blank line between prompts.
+# Just looks a little cleaner imo.
+add_newline = true
+
+[character]
+# Success and Failure symbol modification
+success_symbol = "[➜](bold green) "
+error_symbol = "[](bold red) "
+
+# Setup the Username
+# (The Username, Hostname, and Directory colors are 
+#  complimentary of each other)
+[username]
+style_user = "#2e84e6 bold"
+format = "[$user]($style)"
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+ssh_symbol = "🌐"
+trim_at = "."
+format = "@[$ssh_symbol$hostname]($style) in "
+style = "#e6752e bold"
+disabled = false
+
+# Fanciness with the directory
+# The word "directory" looks like it's spelled wrong if you 
+# look at it long enough.
+[directory]
+truncation_length = 3
+truncate_to_repo = false
+style = "#bb2ee6 bold"
+read_only = " ()"
+read_only_style = "red bold"
+home_symbol = "~"
+use_os_path_sep = true
+truncation_symbol = "…/"
+
+[python]
+symbol = ""
+python_binary = "python"
+
+[git_status]
+disabled = false
+
+[docker_context]
+format = "via [🐋 $context](blue bold)"
